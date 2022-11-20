@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Air Application</string>
+    <string name="text_direction">Откуда -> Куда</string>
+    <string name="desc_direction"> -> </string>
+    <string name="header_date">Выберите даты:</string>
+    <string name="data_departure">Дата вылета: </string>
+    <string name="data_arrival">Дата прилета: </string>
+    <string name="header_quantity">Введите число пассажиров:</string>
+    <string name="quantity_adults">Взрослые:</string>
+    <string name="quantity_children">Дети:</string>
+    <string name="quantity_infants">Младенцы:</string>
+    <string name="text_button">Поиск</string>
+
+    <string-array name="cities">
+        <item>Иркутск</item>
+        <item>Ангарск</item>
+        <item>Москва</item>
+        <item>Слюдянка</item>
+        <item>Томск</item>
+        <item>Новосибирск</item>
+        <item>Калуга</item>
+        <item>Сочи</item>
+        <item>Крым</item>
+        <item>Волгоград</item>
+        <item>Владивосток</item>
+    </string-array>
+
+</resources>

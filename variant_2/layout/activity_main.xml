@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/app_name"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+
+        android:layout_centerHorizontal="true"
+    />
+
+    <TextView
+        android:id="@+id/header_dir"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_weight="0"
+
+        android:layout_below="@+id/app_name"
+        android:layout_centerHorizontal="true"
+
+        android:text="@string/text_direction"
+        android:textSize="18dp"
+        />
+
+    <Spinner
+        android:id="@+id/spinner1"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="30dp"
+
+        android:layout_below="@+id/header_dir"
+
+        android:entries="@array/cities"
+    />
+
+    <TextView
+        android:id="@+id/dir_text_desc"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/desc_direction"
+
+        android:layout_alignBaseline="@+id/spinner1"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignBaseline="@+id/dir_text_desc"
+        android:layout_alignParentRight="true"
+
+        android:entries="@array/cities"
+    />
+
+    <TextView
+        android:id="@+id/header_date"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+
+        android:layout_below="@+id/spinner1"
+        android:layout_centerHorizontal="true"
+
+        android:text="@string/header_date"
+        android:textSize="18dp"
+        />
+
+        <TextView
+            android:id="@+id/date_des_1"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/data_departure"
+
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="5dp"
+
+            android:layout_below="@+id/header_date"
+        />
+
+        <EditText
+            android:id="@+id/editTextDate_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignBaseline="@+id/date_des_1"
+            android:layout_toRightOf="@+id/date_des_1"
+
+            android:ems="10"
+            android:inputType="date" />
+
+        <TextView
+            android:id="@+id/date_des_2"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@+id/date_des_1"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="5dp"
+
+            android:text="@string/data_arrival"
+            />
+
+        <EditText
+            android:id="@+id/editTextDate_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignBaseline="@+id/date_des_2"
+            android:layout_toRightOf="@+id/date_des_2"
+
+            android:ems="10"
+            android:inputType="date" />
+
+    <TextView
+        android:id="@+id/header_quantity"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+
+        android:layout_below="@+id/date_des_2"
+
+        android:layout_centerHorizontal="true"
+
+        android:text="@string/header_quantity"
+        android:textSize="18dp"
+        />
+
+        <TextView
+            android:id="@+id/quantity_adults"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@+id/header_quantity"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="5dp"
+
+            android:text="@string/quantity_adults"
+            />
+
+        <EditText
+            android:id="@+id/editTextNumber"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+
+            android:layout_alignBaseline="@+id/quantity_adults"
+            android:layout_toRightOf="@+id/quantity_adults"
+            android:layout_marginStart="5dp"
+
+            android:ems="10"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/quantity_children"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/quantity_children"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="5dp"
+
+            android:layout_below="@+id/quantity_adults"
+            />
+
+        <EditText
+            android:id="@+id/editTextNumber_2"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+
+            android:layout_alignBaseline="@+id/quantity_children"
+            android:layout_toRightOf="@+id/quantity_children"
+            android:layout_marginStart="5dp"
+
+            android:ems="10"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/quantity_infants"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/quantity_infants"
+            android:layout_below="@+id/quantity_children"
+
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="5dp"
+            />
+
+        <EditText
+            android:id="@+id/editTextNumber_3"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+
+            android:layout_alignBaseline="@+id/quantity_infants"
+            android:layout_toRightOf="@+id/quantity_infants"
+            android:layout_marginStart="5dp"
+
+            android:ems="10"
+            android:inputType="number" />
+
+    <Button
+        android:id="@+id/button"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+
+        android:layout_below="@+id/quantity_infants"
+        android:layout_centerHorizontal="true"
+
+        android:text="@string/text_button"
+    />
+
+</RelativeLayout>
